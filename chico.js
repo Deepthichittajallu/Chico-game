@@ -120,11 +120,8 @@ function placeFruit() {
     fruitCell.id = "fruit-cell"; 
 }
 function showResultBox(timeTaken) {
-    // Remove if already exists
     let oldBox = document.getElementById("resultBox");
     if (oldBox) oldBox.remove();
-
-    // Create result box
     const box = document.createElement("div");
     box.id = "resultBox";
     box.style.position = "fixed";
@@ -150,7 +147,7 @@ function showResultBox(timeTaken) {
     restartBtn.style.padding = "10px 20px";
     restartBtn.style.fontSize = "16px";
     restartBtn.onclick = () => {
-        location.reload(); // Reload the page
+        location.reload(); 
     };
 
     box.appendChild(restartBtn);
